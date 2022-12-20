@@ -1,0 +1,201 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(0);
+    padding: 40px;
+
+    width: 528px;
+    min-height: 581px;
+
+    background-color: var(--primary-white-color);
+    box-shadow: 0px 1px 3px var(--box-shadow-color);
+    border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scale(0) rotate(180deg);
+    }
+    &__close-button {
+        position: absolute;
+    
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        top: 8px;
+        right: 8px;
+        padding: 0;
+        
+        background-color: var(--primary-white-color);
+        border: 1px solid var(--modal-icon-color);
+        &:hover .modal__close-icon,
+        &:focus .modal__close-icon {
+            fill: var(--accent-color);
+        }
+    }
+    &__close-icon {
+        padding: 6px;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+
+        color: var(--hover-color);
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__form-title {
+        margin: 0;
+        margin-bottom: 12px ;
+        text-align: center;
+    
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+        
+        color: var(--title-text-color);
+    }
+    &__form-btn {
+        display: flex;
+        justify-content: center;
+    }
+}
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.input {
+    width: 100%;
+    height: 40px;
+    padding: 11px 12px;
+    padding-left: 42px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: rgba(25, 7, 7, 0.5);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        outline: transparent;
+    }
+    &:hover + svg,
+    &:focus + svg {
+        fill: var(--accent-color)
+    }
+}
+.modal-input {
+    margin-bottom: 10px;
+    & label {
+        display: block;
+        margin-bottom: 4px;
+    }
+    &__field {
+        position: relative;
+    }
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translateY(-50%);
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__politic {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    &__com {
+        margin-bottom: 20px;
+    }
+    &__com label {
+        display: block;
+        margin-bottom: 4px;
+    }
+    &__label {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: var(--primary-text-color);
+    }
+    &__comment {
+        padding: 12px 16px;
+        width: 100%;
+        height: 120px;
+    
+        resize: none;
+        &::placeholder {
+            color: rgba(117, 117, 117, 0.5);
+        }
+    }
+    &__check {
+        width: 16px;
+        height: 16px;
+        border: 2px solid var(--primary-text-color);
+        border-radius: 2px;
+        margin-right: 7px;
+    
+        justify-content: center;
+        @extend %flex-align;
+    
+        cursor: pointer;
+        & svg {
+            fill: transparent;
+        }
+        &:checked + label > span {
+            border: none;
+            background-color: var(--accent-color);
+        }
+        &:checked + label > span svg {
+            fill: var(--primary-white-color);
+        }
+    }
+    &__cklick {
+        position: relative;
+    
+        margin-left: 5px;
+        color: var(--accent-color);
+        text-decoration: none;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+.form__btn {
+    display: block;
+    width: 200px;
+    height: 50px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: var(--primary-white-color);
+    background-color: #2196F3;
+    box-shadow: var(--box-shadow-color-2);
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: var(--title-text-color);
+    }
+}
+label.modal-politic__label {
+    @extend %flex-align;
+}
