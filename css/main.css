@@ -288,9 +288,6 @@ img {
   height: auto;
   margin-bottom: 30px;
 }
-.properties__list .properties__item + .properties__item {
-  margin-left: 30px;
-}
 .properties__title {
   margin-top: 0;
   margin-bottom: 10px;
