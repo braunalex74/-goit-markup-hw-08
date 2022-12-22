@@ -116,11 +116,10 @@ img {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 1200px;
+  padding: 0 15px;
 }
 
 .box {
@@ -558,11 +557,16 @@ img {
   flex-wrap: wrap;
 }
 .portfolio__img-list > .portfolio__item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
   width: 100%;
   background: var(--primary-white-color);
 }
 .portfolio__img-list > .portfolio__item:not(:last-child) {
   margin-bottom: 30px;
+}
+.portfolio__img-list > .portfolio__item:nth-last-child(-n+3) {
+  margin-bottom: 0;
 }
 
 .footer {
