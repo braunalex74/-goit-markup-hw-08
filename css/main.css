@@ -118,7 +118,7 @@ img {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -245,8 +245,8 @@ img {
 
 .properties {
   margin: 0;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .properties__list {
   display: flex;
@@ -263,17 +263,10 @@ img {
   background-color: var(--background-color_2);
   margin-bottom: 30px;
 }
-.properties__list .properties__item {
-  width: 270px;
-}
-.properties__list .properties__item + .properties__item {
-  margin-left: 30px;
-}
-.properties__list .properties__item {
-  width: 270px;
-}
-.properties__list .properties__item + .properties__item {
-  margin-left: 30px;
+.properties__list .properties__item:not(:last-child) {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
 }
 .properties__title {
   margin-top: 0;

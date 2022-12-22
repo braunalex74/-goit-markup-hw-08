@@ -1,7 +1,9 @@
 .properties {
     margin: 0;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     &__list {
         display: flex;
         flex-wrap: wrap;
@@ -17,16 +19,16 @@
             margin-bottom: 30px;
         }
         & .properties__item {
-            width: 270px;
+             // width: 270px;
+        }
+        & .properties__item:not(:last-child) {
+            width: 100%;
+            height: auto;
+            margin-bottom: 30px;
         }
         & .properties__item + .properties__item {
-            margin-left: 30px;
-        }
-        & .properties__item {
-            width: 270px;
-        }
-        & .properties__item + .properties__item {
-            margin-left: 30px;
+            // margin-left: 30px;
+            
         }      
     }
     &__title {
