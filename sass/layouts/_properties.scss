@@ -9,6 +9,14 @@
         flex-wrap: wrap;
         margin-top: 0;
         margin-bottom: 0;
+        & .properties__item {
+            //  width: 270px;
+           
+            @media screen and (min-width: 768px) {
+                width: calc((100% - 60px) / 2);
+            }
+           
+        }
         & > .properties__item::before {
             display: block;
             content: "";
@@ -18,17 +26,14 @@
             background-color: var(--background-color_2);
             margin-bottom: 30px;
         }
-        // & .properties__item {
-        //      width: 270px;
-        // }
+        
         & .properties__item:not(:last-child) {
             width: 100%;
             height: auto;
             margin-bottom: 30px;
         }
         & .properties__item + .properties__item {
-            // margin-left: 30px;
-            
+            margin-left: 30px;
         }      
     }
     &__title {
