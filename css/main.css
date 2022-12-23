@@ -532,10 +532,26 @@ img {
 }
 
 .client {
-  padding-top: 94px;
-  padding-bottom: 94px;
   text-align: center;
   background-color: var(--primary-white-color);
+}
+@media screen and (min-width: 480px) {
+  .client {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .client {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .client__title {
   margin-top: 0;
