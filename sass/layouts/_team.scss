@@ -5,6 +5,7 @@
     text-align: center;
 
     background-color: var(--background-color_2);
+
     &__title {
         margin-top: 0;
         margin-bottom: 50px;
@@ -14,11 +15,14 @@
         line-height: 1.17;
         color: var(--title-text-color);
     }
+
     &__list {
         display: flex;
+
         & > .team__item + .team__item {
             margin-left: 30px;
         }
+
         & > .team__item {
             width: 270px;
             
@@ -27,6 +31,7 @@
             border-radius: 0px 0px 4px 4px;
         }
     }
+
     &__name {
         margin-top: 30px;
         margin-bottom: 10px;
@@ -40,17 +45,20 @@
             color: var(--title-text-color);
         }
     }
+
     &__text {
         margin-top: 0;
         margin-bottom: 16px;
     
         color: var(--primary-text-color);
     }
+
     &-soc__list {
         justify-content: center;
         margin-bottom: 30px;
         @extend %flex-align;
     }
+
     &-soc__item {
         width: 44px;
         height: 44px;
@@ -58,6 +66,7 @@
             margin-right: 10px;
         }
     }
+
     &-soc__link {
         width: 100%;
         height: 100%;
@@ -76,6 +85,7 @@
             fill: var(--primary-white-color);
         }
     }
+    
     &__icon {
         fill: currentColor;
     }
