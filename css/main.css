@@ -439,9 +439,29 @@ img {
     width: calc((100% - 60px) / 2);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .team__list > .team__item {
     width: 270px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__list > .team__item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list > .team__item:nth-child(2n+1) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__list > .team__item:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list > .team__item:nth-child(-n+2) {
+    margin-bottom: 0;
   }
 }
 .team__name {
