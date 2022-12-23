@@ -365,6 +365,11 @@ img {
   padding-bottom: 94px;
   text-align: center;
 }
+@media screen and (max-width: 1200px) {
+  .employment {
+    display: none;
+  }
+}
 .employment__list {
   display: flex;
 }
