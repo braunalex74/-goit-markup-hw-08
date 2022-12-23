@@ -258,14 +258,22 @@ img {
   background-color: var(--hover-color);
 }
 
-.properties {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 480px) {
   .properties {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .properties {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .properties {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 .properties__list {
@@ -399,15 +407,25 @@ img {
 }
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   text-align: center;
   background-color: var(--background-color_2);
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 480px) {
   .team {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 .team__title {
