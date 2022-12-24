@@ -576,7 +576,6 @@ img {
 @media screen and (min-width: 1200px) {
   .client__list {
     flex-wrap: nowrap;
-    justify-content: center;
   }
 }
 @media screen and (min-width: 480px) {
