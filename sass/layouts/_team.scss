@@ -42,6 +42,10 @@
         }
 
         & > .team__item {
+            @media screen and (min-width: 480px) {
+                width: 100%;
+            }
+
             @media screen and (min-width: 768px) {
                 width: calc((100% - 60px) / 2);
             }
@@ -55,7 +59,7 @@
             border-radius: 0px 0px 4px 4px;
         }
 
-        & > .team__item:nth-child(2n+1) {
+        & > .team__item:nth-child(2n + 1) {
             @media screen and (min-width: 768px) {
                 margin-right: 30px;
             }
@@ -65,7 +69,7 @@
             }
         }
 
-        & > .team__item:nth-child(-n+2) {
+        & > .team__item:nth-child(-n + 2) {
             @media screen and (min-width: 768px) {
                 margin-bottom: 30px;
             }
@@ -102,6 +106,13 @@
         justify-content: center;
         margin-bottom: 30px;
         @extend %flex-align;
+
+        @media screen and (min-width: 480px) {
+            padding-bottom: 24px;
+        }
+        @media screen and (min-width: 768px) {
+            padding-bottom: 0;
+        }
     }
 
     &-soc__item {
