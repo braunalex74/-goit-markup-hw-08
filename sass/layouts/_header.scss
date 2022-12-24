@@ -3,6 +3,7 @@
 }
 .nav {
     @extend %flex-align;
+
     &__list {
         display:flex;
         margin-left: 93px;
@@ -22,6 +23,7 @@
             color: var(--accent-color);
         }
     }
+    
     &__link {
         position: relative;
     
