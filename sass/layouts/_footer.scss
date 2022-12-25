@@ -125,6 +125,7 @@
 
     &-form {
         display: block;
+        align-items: center;
         margin: 0;
         
         @media screen and (min-width: 480px) {
@@ -179,15 +180,9 @@
                 background-color: var(--background-color);
                 border: 1px solid var(--accent-color);
             }
-
-            @media screen and (min-width: 768px) {
-                display: block;
-                align-items: center;
-            }
         }
 
         &__input {
-            
             height: 50px;
             padding-left: 16px;
 
@@ -197,10 +192,12 @@
             }
 
             @media screen and (min-width: 768px) {
+                display: block;
                 width: 450px;
             }
 
             @media screen and (min-width: 1200px) {
+                display: inline-flex;
                 width: 358px;
             }
         

@@ -864,6 +864,7 @@ img {
 }
 .footer-form {
   display: block;
+  align-items: center;
   margin: 0;
 }
 @media screen and (min-width: 480px) {
@@ -915,12 +916,6 @@ img {
   background-color: var(--background-color);
   border: 1px solid var(--accent-color);
 }
-@media screen and (min-width: 768px) {
-  .footer-form__btn {
-    display: block;
-    align-items: center;
-  }
-}
 .footer-form__input {
   height: 50px;
   padding-left: 16px;
@@ -943,11 +938,13 @@ img {
 }
 @media screen and (min-width: 768px) {
   .footer-form__input {
+    display: block;
     width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-form__input {
+    display: inline-flex;
     width: 358px;
   }
 }
