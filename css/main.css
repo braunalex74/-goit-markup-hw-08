@@ -152,8 +152,9 @@ img {
 
 .nav_menu-btn {
   display: inline-block;
-  margin: 0;
-  padding: 0;
+  margin-right: 15px;
+  margin-left: 276px;
+  padding: 8px 12px;
   border: none;
   background-color: transparent;
 }
@@ -171,15 +172,6 @@ img {
 .nav_menu-btn.is-open .icon-menu {
   display: none;
 }
-.nav_menu-container {
-  background-color: palegoldenrod;
-  padding: 20px;
-  text-align: center;
-  font-size: 20px;
-}
-.nav_menu-container.is-open {
-  display: block;
-}
 @media screen and (max-width: 767px) {
   .nav_menu-container {
     display: none;
@@ -189,6 +181,9 @@ img {
     width: 100%;
     height: 796px;
   }
+  .nav_menu-container.is-open {
+    display: block;
+  }
 }
 @media screen and (min-width: 768px) {
   .nav_menu-container {
@@ -197,7 +192,17 @@ img {
 }
 .nav__list {
   display: flex;
-  margin-left: 93px;
+}
+@media screen and (min-width: 768px) {
+  .nav__list {
+    margin-left: 88px;
+    margin-right: 97px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__list {
+    margin-left: 93px;
+  }
 }
 .nav__list .nav__item + .nav__item {
   margin-left: 50px;
@@ -213,13 +218,6 @@ img {
 .nav__list .nav__link.current {
   color: var(--accent-color);
 }
-.nav__list .menu-btn {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
 .nav__link {
   position: relative;
   color: var(--title-text-color);
@@ -231,12 +229,19 @@ img {
   letter-spacing: 0.02em;
 }
 
-.contact__list {
-  display: flex;
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .contact__list {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__list {
+    margin-left: 300px;
+    display: flex;
+  }
 }
 .contact__list .contact__item + .contact__item {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .contact__link {
