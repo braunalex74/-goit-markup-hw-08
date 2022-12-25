@@ -25,6 +25,15 @@
                     <li class="nav__item"><a class="nav__link link" href="./portfolio.html">Портфоліо</a></li>
                     <li class="nav__item"><a class="nav__link link" href="">Контакти</a></li>
                 </ul>
+
+                <button type="button" class="nav_menu-btn" aria-expanded="false" aria-controls="nav_menu-container" data-menu-button>
+                    <svg width="40" height="40" aria-label="перемикач меню">
+                        <use href="./images/icons.svg#icon-menu_40" class="icon-menu"></use>
+                        <use href="./images/icons.svg#icon-close_40" class="icon-close"></use>
+                    </svg>
+                </button>
+
+                <div class="nav_menu-container" id="nav_menu-container is-open" data-menu>Меню</div>
             </nav>
             
             <ul class="contact__list list">
@@ -439,6 +448,7 @@
           </form>
         </div>
     </div> -->
-    <script src="./js/modal.js"></script>        
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>        
 </body>
 </html>

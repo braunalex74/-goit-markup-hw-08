@@ -146,9 +146,33 @@ img {
 }
 
 .header {
+  position: relative;
   border-bottom: 1px solid var(--border-color);
 }
 
+.nav_menu-btn .icon-close {
+  display: none;
+}
+.nav_menu-btn.is-open .icon-close {
+  display: block;
+}
+.nav_menu-btn.is-open .icon-menu {
+  display: none;
+}
+.nav_menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: palegoldenrod;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+.nav_menu-container.is-open {
+  display: block;
+}
 .nav__list {
   display: flex;
   margin-left: 93px;
@@ -166,6 +190,13 @@ img {
 }
 .nav__list .nav__link.current {
   color: var(--accent-color);
+}
+.nav__list .menu-btn {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 .nav__link {
   position: relative;
