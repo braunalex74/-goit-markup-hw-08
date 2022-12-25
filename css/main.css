@@ -771,6 +771,15 @@ img {
     padding-left: 15px;
   }
 }
+@media screen and (min-width: 768px) {
+  .footer-block {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-block {
     display: flex;
@@ -802,13 +811,20 @@ img {
 .footer .add {
   color: var(--primary-white-color);
 }
-.footer-soc {
-  margin-left: 70px;
-}
 @media screen and (min-width: 480px) {
   .footer-soc {
     margin-bottom: 60px;
     margin-left: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-soc {
+    margin-left: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-soc {
+    margin-left: 70px;
   }
 }
 .footer-soc__text {
@@ -847,8 +863,27 @@ img {
   fill: currentColor;
 }
 .footer-form {
-  margin-left: auto;
   display: block;
+  margin: 0;
+}
+@media screen and (min-width: 480px) {
+  .footer-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-form {
+    display: block;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    margin-left: auto;
+  }
 }
 .footer-form__text {
   margin-top: 0;
@@ -880,11 +915,14 @@ img {
   background-color: var(--background-color);
   border: 1px solid var(--accent-color);
 }
+@media screen and (min-width: 768px) {
+  .footer-form__btn {
+    display: block;
+    align-items: center;
+  }
+}
 .footer-form__input {
-  width: 358px;
   height: 50px;
-  padding-top: 15px;
-  padding-bottom: 15px;
   padding-left: 16px;
   font-weight: 400;
   font-size: 16px;
@@ -901,8 +939,16 @@ img {
   .footer-form__input {
     margin-bottom: 20px;
     width: 450px;
-    padding-left: 15px;
-    padding-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-form__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__input {
+    width: 358px;
   }
 }
 .footer-form__input:hover, .footer-form__input:focus {
