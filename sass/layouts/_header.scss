@@ -5,6 +5,18 @@
 .nav {
     @extend %flex-align;
 
+    &_menu-btn {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
     &_menu-btn .icon-close {
         display: none;
     }
@@ -18,12 +30,6 @@
     }
     
     &_menu-container {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-    
         background-color: palegoldenrod;
         padding: 20px;
         text-align: center;
@@ -31,6 +37,19 @@
 
         &.is-open {
             display: block;
+        }
+
+        @media screen and (max-width: 767px) {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 796px;
+        }
+
+        @media screen and (min-width: 768px) {
+            display: flex;
         }
     }
 
