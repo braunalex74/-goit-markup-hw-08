@@ -38,7 +38,6 @@
             top: 100%;
             left: 0;
             width: 100%;
-            height: 796px;
             background-color: var( --primary-white-color);
 
             &.is-open {
@@ -246,4 +245,30 @@
    
     background-color: var(--accent-color);
     border-radius: 2px;
+}
+
+.soc__list {
+    @media screen and (min-width: 480px) {
+        display: flex;
+        padding-left: 40px;
+        padding-bottom: 48px;
+        margin-top: 64px;
+    }
+
+    @media screen and (min-width: 767px) {
+        display: none;
+        
+    }
+}
+
+.soc__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+
+.soc__item:not(:last-child) {
+    margin-right: 20px;
 }

@@ -193,7 +193,6 @@ img {
     top: 100%;
     left: 0;
     width: 100%;
-    height: 796px;
     background-color: var(--primary-white-color);
   }
   .nav__menu-container.is-open {
@@ -402,6 +401,32 @@ img {
     width: 100%;
     height: 4px;
   }
+}
+
+@media screen and (min-width: 480px) {
+  .soc__list {
+    display: flex;
+    padding-left: 40px;
+    padding-bottom: 48px;
+    margin-top: 64px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .soc__list {
+    display: none;
+  }
+}
+
+.soc__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.soc__item:not(:last-child) {
+  margin-right: 20px;
 }
 
 .hero {
