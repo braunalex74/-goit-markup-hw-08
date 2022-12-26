@@ -248,6 +248,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .contact__list {
+    margin-top: 0;
     margin-left: 300px;
     display: flex;
   }
@@ -895,6 +896,11 @@ img {
 @media screen and (min-width: 480px) {
   .footer-contact {
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-contact {
+    margin-bottom: 0px;
   }
 }
 .footer-contact__link {
