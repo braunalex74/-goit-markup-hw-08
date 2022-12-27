@@ -32,9 +32,8 @@
         }
 
         & .portfolio__item + .portfolio__item {
-            
 
-            @media screen and (min-width: 1200px) {
+            @media screen and (min-width: 768px) {
                 margin-left: 8px;  
             }
         }
@@ -44,11 +43,19 @@
             @media screen and (min-width: 480px) {
                 margin-right: 8px;
             }
+
+            @media screen and (min-width: 768px) {
+                margin-right: 0;
+            }
         }
 
         & .portfolio__item:nth-child(-n + 3) {
             @media screen and (min-width: 480px) {
                 margin-bottom: 15px;
+            }
+
+            @media screen and (min-width: 768px) {
+                margin-bottom: 0;
             }
         }
     }
