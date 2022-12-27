@@ -27,8 +27,8 @@
 
         & .nav__item:not(:last-child) {
             @media screen and (min-width: 480px) {
-                margin-botom: 32px;
-             }
+                margin-bottom:32px
+             } 
  
              @media screen and (min-width: 768px) {
                   margin-left: 0;
@@ -212,8 +212,7 @@
     }
 
     @media screen and (min-width: 767px) {
-        display: none;
-        
+        display: none;  
     }
 }
 
@@ -227,4 +226,14 @@
 
 .soc__item:not(:last-child) {
     margin-right: 20px;
+}
+
+.tel {
+    @media screen and (min-width: 480px) {
+        color: var(--accent-color);
+    }
+
+     @media screen and (min-width: 768px) {
+        color: var(--primary-text-color);
+    }
 }
