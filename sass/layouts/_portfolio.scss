@@ -20,8 +20,7 @@
     
         @media screen and (min-width: 480px) {
             flex-wrap: wrap;
-            width: 326px;
-            justify-content: start;
+            width: 336px;
             margin-bottom: 40px;
         }
 
@@ -33,7 +32,24 @@
         }
 
         & .portfolio__item + .portfolio__item {
-            margin-left: 8px;  
+            
+
+            @media screen and (min-width: 1200px) {
+                margin-left: 8px;  
+            }
+        }
+
+        & .portfolio__item :not(:nth-child(3)) {
+
+            @media screen and (min-width: 480px) {
+                margin-right: 8px;
+            }
+        }
+
+        & .portfolio__item:nth-child(-n + 3) {
+            @media screen and (min-width: 480px) {
+                margin-bottom: 15px;
+            }
         }
     }
     &__btn {
