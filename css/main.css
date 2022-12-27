@@ -470,6 +470,7 @@ img {
 @media screen and (min-width: 768px) {
   .nav__list .nav__item:not(:last-child) {
     margin-left: 0;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 480px) {
