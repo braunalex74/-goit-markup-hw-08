@@ -80,6 +80,7 @@ label.modal-politic__label, .modal-input__check, .footer-soc__link, .footer-soc_
   padding: 8px 12px;
   border: none;
   background-color: transparent;
+  z-index: 2;
 }
 @media screen and (min-width: 768px) {
   .menu-btn {
@@ -106,6 +107,7 @@ label.modal-politic__label, .modal-input__check, .footer-soc__link, .footer-soc_
     top: 100%;
     left: 0;
     width: 100%;
+    z-index: 1;
     background-color: var(--primary-white-color);
   }
   .menu-container.is-open {
