@@ -73,6 +73,51 @@ label.modal-politic__label, .modal-input__check, .footer-soc__link, .footer-soc_
   }
 }
 
+.menu-btn {
+  display: inline-block;
+  margin-right: 15px;
+  margin-left: 276px;
+  padding: 8px 12px;
+  border: none;
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+.menu-btn .icon-close {
+  display: none;
+}
+
+.menu-btn.is-open .icon-close {
+  display: block;
+}
+
+.menu-btn.is-open .icon-menu {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-white-color);
+  }
+  .menu-container.is-open {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: flex;
+  }
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -163,46 +208,6 @@ img {
 
 .nav {
   justify-content: space-between;
-}
-.nav__menu-btn {
-  display: inline-block;
-  margin-right: 15px;
-  margin-left: 276px;
-  padding: 8px 12px;
-  border: none;
-  background-color: transparent;
-}
-@media screen and (min-width: 768px) {
-  .nav__menu-btn {
-    display: none;
-  }
-}
-.nav__menu-btn .icon-close {
-  display: none;
-}
-.nav__menu-btn.is-open .icon-close {
-  display: block;
-}
-.nav__menu-btn.is-open .icon-menu {
-  display: none;
-}
-@media screen and (max-width: 767px) {
-  .nav__menu-container {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--primary-white-color);
-  }
-  .nav__menu-container.is-open {
-    display: block;
-  }
-}
-@media screen and (min-width: 768px) {
-  .nav__menu-container {
-    display: flex;
-  }
 }
 @media screen and (min-width: 480px) {
   .nav__list {

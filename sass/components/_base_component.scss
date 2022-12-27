@@ -18,10 +18,10 @@ img {
     padding: 0;
     margin: 0;
 }
- .accent {
+.accent {
     color: var(--accent-color);
- }
- .visually-hidden {
+}
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -34,8 +34,8 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
     opacity: 0;
-  }
-  .btn {
+}
+.btn {
     display: inline-block;
     border-radius: 4px;
     
@@ -44,4 +44,4 @@ img {
     text-align: center;
     border: none;
     cursor: pointer;
-  }
+}
