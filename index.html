@@ -136,7 +136,16 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list list">
                     <li class="team__item">
-                        <img src="./images/img_1.jpg" alt="фото Ігора Дем'яненко" width="270">
+                        <picture>
+                            <source
+                                srcset="./images/demjan_mob-min.jpg 1x, ./images/demjan_mob@2x-min.jpg 2x" media="(min-width: 480px)"
+                            />
+                            <source
+                                srcset="./images/demjan_tab-min.jpg 1x ./images/demjan_mob@2x-min.jpg 2x" media="(min-width: 768px)"
+                            />
+                            <img src="./images/img_1.jpg" alt="фото Ігора Дем'яненко" width="270">
+                        </picture>
+                        
                         <h3 class="team__name">Ігор Дем'яненко</h3>
                         <p class="team__text">Product Designer</p>
                         <ul class="team-soc__list list">
@@ -172,7 +181,16 @@
 
                     </li>
                     <li class="team__item">
-                        <img src="./images/img_2.jpg" alt="фото Ольги Рєпіної" width="270">
+                        <picture>
+                            <source
+                                srcset="/images/repina_mob-min.jpg 1x, ./images/demjan_mob@2x-min.jpg 2x" media="(min-width: 480px)"
+                            />
+                            <source
+                                srcset="/images/repina_tab-min.jpg, ./images/demjan_mob@2x-min.jpg 2x" media="(min-width: 768px)"
+                            />
+                            <img src="./images/img_2.jpg" alt="фото Ольги Рєпіної" width="270">
+                        </picture>
+                        
                         <h3 class="team__name">Ольга Рєпіна</h3>
                         <p class="team__text">Frontend Developer</p>
                         <ul class="team-soc__list list">
@@ -207,7 +225,13 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img src="./images/img_3.jpg" alt="фото Миколи Тарасова" width="270">
+                        <picture>
+                            <source
+                                srcset="/images/taras_tab-min.jpg 1x, ./images/taras_tab@2x-min.jpg 2x" media="(min-width: 768px)"
+                            />
+                            <img src="./images/img_3.jpg" alt="фото Миколи Тарасова" width="270">
+                        </picture>
+                        
                         <h3 class="team__name">Микола Тарасов</h3>
                         <p class="team__text">Marketing</p>
                         <ul class="team-soc__list list">
@@ -242,7 +266,16 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img src="./images/img_4.jpg" alt="фото Михайла Єрмакова" width="270">
+                        <picture>
+                            <source
+                                srcset="/images/jermak_mob-min.jpg 1x, ./images/jermak_mob@2x-min.jpg 2x" media="(min-width: 480px)"
+                            />
+                            <source
+                                srcset="/images/jermak_tab-min.jpg, ./images/jermak_mob@2x-min.jpg 2x" media="(min-width: 768px)"
+                            />
+                            <img src="./images/img_4.jpg" alt="фото Михайла Єрмакова" width="270">
+                        </picture>
+                        
                         <h3 class="team__name">Михайло Єрмаков</h3>
                         <p class="team__text">UI Designer</p>
                         <ul class="team-soc__list list">
