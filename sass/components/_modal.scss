@@ -29,9 +29,11 @@
     box-shadow: 0px 1px 3px var(--box-shadow-color);
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(0) rotate(180deg);
     }
+
     &__close-button {
         position: absolute;
     
@@ -49,6 +51,7 @@
             fill: var(--accent-color);
         }
     }
+    
     &__close-icon {
         padding: 6px;
         width: 100%;
@@ -59,6 +62,7 @@
         color: var(--hover-color);
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+    
     &__form-title {
         margin: 0;
         margin-bottom: 12px ;
