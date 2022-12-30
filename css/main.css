@@ -60,22 +60,6 @@ ol {
   letter-spacing: 0.03em;
   color: var(--hover-color);
 }
-@media screen and (max-width: 480px) {
-  .logo {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    -webkit-clip-path: inset(100%);
-            clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-    opacity: 0;
-  }
-}
 @media screen and (min-width: 768px) {
   .logo {
     font-size: 24px;
@@ -544,6 +528,8 @@ img {
 @media screen and (min-width: 480px) {
   .contact__list {
     padding-left: 40px;
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 @media screen and (min-width: 768px) {
@@ -567,17 +553,17 @@ img {
   }
 }
 @media screen and (min-width: 480px) {
-  .contact__list .contact__item:not(:last-child) {
+  .contact__list .contact__item {
     margin-bottom: 32px;
   }
 }
 @media screen and (min-width: 768px) {
-  .contact__list .contact__item:not(:last-child) {
+  .contact__list .contact__item {
     margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .contact__list .contact__item:not(:last-child) {
+  .contact__list .contact__item {
     margin-bottom: 0;
   }
 }
