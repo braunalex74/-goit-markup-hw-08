@@ -564,11 +564,6 @@ img {
     margin-bottom: 0;
   }
 }
-@media screen and (min-width: 1200px) {
-  .contact__list .contact__item {
-    margin-bottom: 0;
-  }
-}
 @media screen and (min-width: 768px) {
   .contact__list .contact__item:not(:last-child) {
     margin-bottom: 10px;
