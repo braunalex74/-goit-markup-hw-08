@@ -411,7 +411,6 @@ img {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -1354,8 +1353,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer-block {
-    display: flex;
-    align-items: baseline;
+    text-align: left;
   }
 }
 .footer-contact__list .footer-contact__item:not(:last-of-type) {
