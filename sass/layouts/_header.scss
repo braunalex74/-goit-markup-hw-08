@@ -4,7 +4,7 @@
 }
 .nav {
     @extend %flex-align;
-    justify-content: space-between;
+    // justify-content: space-between;
 
     &__list {
         @media screen and (min-width: 480px) {
@@ -104,7 +104,7 @@
     @media screen and (min-width: 768px) {
         display: block;
         padding-left: 0;
-        margin-left: 97px;
+        margin-left: 90px;
         margin-top: 21px;
         flex-direction: unset;
     }
@@ -126,14 +126,19 @@
          } 
 
         @media screen and (min-width: 768px) {
-            margin-bottom: 10px
+            margin-bottom: 0;
          } 
 
          @media screen and (min-width: 1200px) {
             margin-bottom: 0;
          } 
-        
-    } 
+    }
+
+    & .contact__item:not(:last-child) {
+        @media screen and (min-width: 768px) {
+            margin-bottom: 10px
+         } 
+    }
 }
 .contact__link {
     @extend %flex-align;
