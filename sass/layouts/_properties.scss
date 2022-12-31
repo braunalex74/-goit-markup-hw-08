@@ -1,8 +1,6 @@
 .properties {
-    @media screen and (min-width: 480px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     @media screen and (min-width: 768px) {
         padding-top: 60px;
@@ -17,12 +15,9 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
+        width: 100%;
 
         & .properties__item {
-
-            @media screen and (min-width: 480px) {
-                width: 100%;
-            }
            
             @media screen and (min-width: 768px) {
                 width: calc((100% - 30px) / 2);

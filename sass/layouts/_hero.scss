@@ -2,6 +2,8 @@
     text-align: center;
     margin-right: auto;
     margin-left: auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,9 +11,7 @@
     border: 1px solid var(--hover-color);
     background-color: var(--background-color-hero);
 
-    @media screen and (min-width: 480px) {
-        padding-top: 118px;
-        padding-bottom: 118px;
+    @media screen and (min-width: 320px) {
 
         background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../images/hero_mob-min.jpg');
 
