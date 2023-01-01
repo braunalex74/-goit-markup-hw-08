@@ -1345,16 +1345,10 @@ img {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-right: auto;
-  margin-left: auto;
   background-color: var(--background-color);
 }
-@media screen and (min-width: 480px) {
-  .footer-block {
-    text-align: center;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
+.footer-block {
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .footer-block {
@@ -1378,10 +1372,8 @@ img {
 .footer-contact a[href="https://goo.gl/maps/PAnnSUerjHj3gwqy8"] {
   color: var(--primary-white-color);
 }
-@media screen and (min-width: 480px) {
-  .footer-contact {
-    margin-bottom: 60px;
-  }
+.footer-contact {
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .footer-contact {
@@ -1401,11 +1393,9 @@ img {
 .footer .add {
   color: var(--primary-white-color);
 }
-@media screen and (min-width: 480px) {
-  .footer-soc {
-    margin-bottom: 60px;
-    margin-left: 0;
-  }
+.footer-soc {
+  margin-bottom: 60px;
+  margin-left: 0;
 }
 @media screen and (min-width: 768px) {
   .footer-soc {
@@ -1456,14 +1446,10 @@ img {
   display: block;
   align-items: center;
   margin: 0;
-}
-@media screen and (min-width: 480px) {
-  .footer-form {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: center;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .footer-form {
@@ -1492,7 +1478,6 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  margin-left: 12px;
   padding: 10px 28px;
   align-items: center;
   text-align: left;
@@ -1505,6 +1490,11 @@ img {
 .footer-form__btn:hover, .footer-form__btn:focus {
   background-color: var(--background-color);
   border: 1px solid var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__btn {
+    margin-left: 12px;
+  }
 }
 .footer-form__input {
   height: 50px;
@@ -1520,16 +1510,10 @@ img {
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1200px) {
   .footer-form__input {
+    width: 100%;
     margin-bottom: 20px;
-    width: 450px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer-form__input {
-    display: block;
-    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
