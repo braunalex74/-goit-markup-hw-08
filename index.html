@@ -39,60 +39,66 @@
                                 </svg>+38 096 111 11 11</a>
                         </li>    
                     </ul>
-                    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-                        <svg width="40" height="40" aria-label="перемикач меню">
-                            <use href="./images/icons.svg#icon-menu_40" class="icon-menu"></use>
-                            <use href="./images/icons.svg#icon-close_40" class="icon-close"></use>
-                        </svg>
-                    </button>
+                    
             </nav>
-            
-            <div class="mobile-menu">
-                <div class="container">
-                    <button type="button" class="menu-close">X</button>
+            <button type="button" class="menu-btn">
+                <svg width="40" height="40">
+                    <use href="./images/icons.svg#icon-menu_40" class="icon-menu"></use>
+                </svg>
+            </button>
+        </div>
 
+        <div class="mobile-menu">
+            <div class="container">
+                
+                <div class="menu-content">
+                    <div><button type="button" class="menu-close">
+                        <svg width="40" height="40">
+                            <use href="./images/icons.svg#icon-close_40" class="menu-content__close-icon"></use>
+                        </svg>
+                    </button></div>
                     <nav class="mob-nav">
                         <ul class="mob-nav__list list">
-                            <li class="nav__item"><a class="mob-nav__link link" href="./index.html">Студія</a></li>
+                            <li class="nav__item"><a class="mob-nav__link current link" href="./index.html">Студія</a></li>
                             <li class="nav__item"><a class="mob-nav__link link" href="./portfolio.html">Портфоліо</a></li>
                             <li class="nav__item"><a class="mob-nav__link link" href="">Контакти</a></li>
                         </ul>
+                    </nav>        
+            
+                    <div>
+                        <div class="mob-contact">
+                            <ul class="mob-contact__list list">
+                                <li class="mob-contact__item">
+                                    <a href="tel:+380961111111" class="mob-contact__link-tel link">
+                                        +38 096 111 11 11</a>
+                                </li>  
+                                <li class="mob-contact__item">
+                                    <a href="mailto:info@devstudio.com" class="mob-contact__link-mail link">
+                                        info@devstudio.com</a>
+                                </li>  
+                            </ul>
+                        </div>
 
-                        <ul class="mob-contact__list list">
-                            <li class="mob-contact__item">
-                                <a href="tel:+380961111111" class="mob-contact__link-tel link">
-                                    +38 096 111 11 11</a>
-                            </li>  
-                            <li class="mob-contact__item">
-                                <a href="mailto:info@devstudio.com" class="mob-contact__link-mail link">
-                                    info@devstudio.com</a>
-                            </li>  
-                        </ul>
-                        <!-- <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-                            <svg width="40" height="40" aria-label="перемикач меню">
-                                <use href="./images/icons.svg#icon-menu_40" class="icon-menu"></use>
-                                <use href="./images/icons.svg#icon-close_40" class="icon-close"></use>
-                            </svg>
-                        </button> -->
-                        
-                        <ul class="mob-soc__list list">
-                            <li class="mob-soc__item">
-                                <a href="" class="mob-soc__link link">Instagram</a>
-                            </li>
-                            <li class="mob-soc__item">
-                                <a href="" class="mob-soc__link link">Twitter</a>
-                            </li>
-                            <li class="mob-soc__item">
-                                <a href="" class="mob-soc__link link">Facebook</a>
-                            </li>
-                            <li class="mob-soc__item">
-                                <a href="" class="mob-soc__link link">Linkedin</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                        <div class="mob-social">
+                            <ul class="mob-soc__list list">
+                                <li class="mob-soc__item">
+                                    <a href="" class="mob-soc__link link">Instagram</a>
+                                </li>
+                                <li class="mob-soc__item">
+                                    <a href="" class="mob-soc__link link">Twitter</a>
+                                </li>
+                                <li class="mob-soc__item">
+                                    <a href="" class="mob-soc__link link">Facebook</a>
+                                </li>
+                                <li class="mob-soc__item">
+                                    <a href="" class="mob-soc__link link">Linkedin</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>    
                 
-            </div>
+                </div>
+            </div> 
         </div>
     </header>
 
