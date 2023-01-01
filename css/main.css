@@ -1067,6 +1067,11 @@ img {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+@media screen and (max-width: 768px) {
+  .client__title {
+    margin-bottom: 30px;
+  }
+}
 .client__list {
   flex-wrap: wrap;
 }
