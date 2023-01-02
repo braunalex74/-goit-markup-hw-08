@@ -16,11 +16,6 @@
     transform: translate(-50%, -50%) scale(1) rotate(0);
     padding: 40px;
 
-    @media screen and (min-width: 480px) {
-        width: 450px;
-        min-height: 581px;
-    }
-
     @media screen and (min-width: 1200px) {
         width: 528px;
         min-height: 581px;
@@ -228,14 +223,12 @@ label.modal-politic__label {
 }
 
 .modal-politic__label {
-    @media screen and (min-width: 480px) {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
 
-        color: var(--primary-text-color);
-    }
+    color: var(--primary-text-color);
 
     @media screen and (min-width: 1200px) {
         font-size: 14px;
